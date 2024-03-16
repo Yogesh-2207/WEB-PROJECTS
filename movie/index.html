@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Ticket Booking</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Movie Ticket Booking</h1>
+      <div id="movie-selection">
+        <label for="movie">Select Movie:</label>
+        <select id="movie">
+          <option value="GOOD NIGHT">GOOD NIGHT</option>
+          <option value="PREMAM">PREMAM</option>
+          <option value="MANJUMEL BOYS">MANJUMEL BOYS</option>
+          <option value="JOE">JOE</option>
+          <option value="PRIYAMANA THOZHI">PRIYAMANA THOZHI</option>
+        </select>
+      </div>
+      <div id="ticket-selection">
+        <label for="tickets">Number of Tickets:</label>
+        <input type="number" id="tickets" min="1" value="1" />
+      </div>
+      <button onclick="calculateTotal()">Calculate Total</button>
+      <div id="total"></div>
+      <div id="balance"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
